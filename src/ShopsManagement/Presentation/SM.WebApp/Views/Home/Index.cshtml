@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SM.Business.Models.StoreModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Welcome to Store Management</h1>
+
+<p class="mt-lg-5">
+    <a asp-action="Create">Add a new store</a>
+</p>
+
+<div class="row">
+
+    @foreach (var item in Model) {
+
+   <div class="col-sm-3" style="margin-bottom: 15px;">
+        <div class="card">
+                <div class="card-header">@item.Name</div>
+            <div class="card-body">
+                    <div class="card-text">@item.Description</div>
+                    <div class="card-text">Its located at @item.Location</div>
+                    @Html.ActionLink("Products", "Index","Product", 
+                    new { storeId=item.Id})
+                <div class="card-footer">
+                    @Html.ActionLink("Edit", "Edit", new { id=item.Id}) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id})
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
