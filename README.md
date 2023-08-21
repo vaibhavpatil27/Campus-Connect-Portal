@@ -1,6 +1,4 @@
-# resurrection by vibz
-This is my submission for the Front-End Mentor [Resurrection Landing Page challenge].
-
+# Campus Connect Portal by vibz.
 
 ### The challenge
 
@@ -12,6 +10,8 @@ This is my submission for the Front-End Mentor [Resurrection Landing Page challe
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- C#
+- ASP .NET
 
 [Live Site URL](https://vibz.github.io/resurrection by vibz/).
 
